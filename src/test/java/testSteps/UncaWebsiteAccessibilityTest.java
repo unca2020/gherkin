@@ -32,8 +32,8 @@ public class UncaWebsiteAccessibilityTest {
 
 	@Before
 	public void setup() {
-		System.setProperty("webdriver.gecko.driver", "src/test/resources/driver/geckodriver.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		timeout = new WebDriverWait(driver, 5);
